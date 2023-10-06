@@ -1,0 +1,12 @@
+{
+  "name": "drug-interaction-check",
+  "version": "1.0.0",
+  "description": "Drug interaction checker app",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Doruk Emre",
+  "license": "ISC"
+}
