@@ -4,9 +4,26 @@
   "description": "Drug interaction checker app",
   "private": "true",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run compile && node dist/index.js",
+    "server": "nodemon dist/index.js",
+    "client": "npm run dev --prefix client"
   },
   "author": "Doruk Emre",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DorukEmre/drug-interaction-check.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
