@@ -1,6 +1,7 @@
 import axios from 'axios'
+import { Request, Response } from 'express'
 
-const fetchData = async (req, res) => {
+export const fetchData = async (req: Request, res: Response) => {
   try {
     // Make a GET request to the API
     const response = await axios.get(
@@ -9,7 +10,7 @@ const fetchData = async (req, res) => {
 
     // Send the API response as the HTTP response
     // console.log(response.data)
-    res.json(response.data)
+    res.status(200).json(response.data.fullInteractionTypeGroup)
   } catch (error) {
     // Handle any errors that occur during the request
     console.error('Error:', error)

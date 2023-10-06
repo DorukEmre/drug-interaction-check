@@ -1,8 +1,8 @@
 import express from 'express'
 const router = express.Router()
 
-import mainController from '../controllers/main.controllers.js'
+import mainControllers from '../controllers/main.controllers.js'
 
-router.get('/', mainController.fetchData)
+router.get('/', mainControllers.fetchData)
 
 export default router
